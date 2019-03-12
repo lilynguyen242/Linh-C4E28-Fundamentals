@@ -14,4 +14,4 @@ def is_inside(a, b):
 if is_inside([100,100],[50,50,100,100]) == True:
     print("Your function is correct")
 else:
-print("Ooops, bugs detected")
+    print("Ooops, bugs detected")
