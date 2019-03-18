@@ -21,3 +21,11 @@ for song in list_song:
     }
     in_list.append(play_list)
 # pyexcel.save_as(records=in_list, dest_file_name="music_list.xlsx")
+    # PART 2
+    options = {
+        'default_search': 'ytsearch',
+        'max_downloads': 1,
+        'format': 'bestaudio/audio'
+    }
+    dl = YoutubeDL(options)
+    dl.download([song_name + artist])
