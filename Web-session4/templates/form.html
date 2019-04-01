@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        form {
+            width: 200px;
+            margin: auto;
+            margin-top: 100px;
+        }
+        label {
+            display: block;
+            margin-bottom: 3px;
+        }
+        input {
+            width: 200px;
+            margin-bottom: 10px;
+        }
+        button {
+            background-color: palevioletred;
+            color: antiquewhite;
+            font-size: 15px;
+        }
+    </style>
+</head>
+<body>
+    <form method="POST">
+        <label><b>Model: </b></label>
+        <input name="model" type="text" placeholder="e.g. Honda">
+        <br>
+        <label><b>Daily fee (VND): </b></label>
+        <input name="fee" type="text" placeholder="100000">
+        <br>
+        <label><b>Image: </b></label>
+        <input name="image" type="url" placeholder="e.g. https://hondaxemay.com.vn">
+        <br>
+        <label><b>Year: </b></label>
+        <input name="year" type="text" placeholder="e.g. 2013">
+        <br>
+        <button>Submit</button>
+    </form>
+</body>
+</html>
