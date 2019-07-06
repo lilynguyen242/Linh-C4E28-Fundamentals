@@ -1,0 +1,88 @@
+package lily;
+
+import java.util.ArrayList;
+import java.util.Random;
+
+/**
+ * Hello world!
+ *
+ */
+public class MyNumber {
+    public int TinhGiaiThua(int number)
+    {
+        int kq=1;
+        for(int i=1; i<number; i++)
+        {
+            kq = kq*i;
+        }
+        return kq;
+    }
+
+    public boolean KiemTraSoNguyenTo(int number)
+    {
+        boolean kq=true;
+        for(int i=2; i<number; i++)
+        {
+            if(number%i==0)
+            {
+                kq=false;
+                break;
+            }
+        }
+        return kq;
+
+    }
+    public static void main(String[] arg) {
+        //Cho 1 bien bat ki, doc gia tri cua bien do
+        int a = 1;
+        switch (a)
+        {
+            case 1:
+                System.out.println("Mot");
+                break;
+            case 2:
+                System.out.println("Hai");
+                break;
+            default:
+                System.out.println("Khong biet");
+        }
+    }
+
+    public static void bai1(){
+        int[] listNumber = {1,2,3,4,5,6,7,8,9,10,11,12,13,14,15};
+        int max = 0;
+        for(int i=0; i < listNumber.length; i++)
+        {
+            if(listNumber[i]>max)
+                max=listNumber[i];
+        }
+        System.out.println("So lon nhat la:" + max);
+    }
+
+    public boolean checkFibonaci(int n) {
+        ArrayList<Integer> arrFibonaci = new ArrayList<Integer>();
+        for(int i = 1; i <= n; i++) {
+            if(i==1 || i==2) {
+                arrFibonaci.add(i);
+            }
+            else if(i == arrFibonaci.get(arrFibonaci.size()-1) + arrFibonaci.get(arrFibonaci.size()-2)){
+                arrFibonaci.add(i);
+            }
+        }
+
+        if (arrFibonaci.get(arrFibonaci.size()-1)==n) {
+            return true;
+        }
+        else {
+            return false;
+        }
+    }
+
+    public boolean checkLuckyNumber(int number) {
+        Random random1 = new Random();
+        Random random2 = new Random();
+        Random random3 = new Random();
+    }
+
+
+}
